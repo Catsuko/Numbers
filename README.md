@@ -111,7 +111,7 @@ three.ToString(); --> "+++"
 
 ### Crisp Abstractions
 
-Create your own Numbers to enable extensible and complex behaviour, simply inherit from the Number class and you will instantly be able to compose intricate webs can be assembled to manufacture any behaviour your project may require. The only limit is your imagination.
+Create your own Numbers to enable extensible and complex behaviour, simply inherit from the Number class and you will instantly be able to compose intricate webs that can be assembled to manufacture a solution for any of your requirements. The only limit is your imagination.
 
 Imagine you require a number that when used in an operation, it throws an error. With Numbers, a decorator with such behavious can be easily crafted and integrated into your model.
 
