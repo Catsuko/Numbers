@@ -26,7 +26,6 @@ Number two = one.Next();
 zero.ToString(); --> ""
 one.ToString(); --> "+"
 two.ToString(); --> "++"
-
 ```
 
 ## Arithmetic
@@ -114,7 +113,7 @@ three.ToString(); --> "+++"
 
 Create your own Numbers to enable extensible and complex behaviour, simply inherit from the Number class and you will instantly be able to compose intricate webs can be assembled to manufacture any behaviour your project may require. The only limit is your imagination.
 
-Imagine you reuqire a number that when used in an operation, it throws an error. With Numbers, a decorator with such behavious can be easily crafted and integrated into your model.
+Imagine you require a number that when used in an operation, it throws an error. With Numbers, a decorator with such behavious can be easily crafted and integrated into your model.
 
 ```
 Using Numbers;
@@ -123,7 +122,6 @@ Number zero = new Zero();
 Number decorated = new RaiseErrorNumberDecorator(zero);
 
 decorated.Plus(zero); --> "System.Exception is raised."
-
 ```
 
 ## Further Reading
