@@ -96,7 +96,7 @@ Number two = one.Next();
 two.Times(two).Plus(one).ToString(); --> "+++++"
 ```
 
-## Advanced Usage
+## Other Features
 
 ### Fluent Interfaces
 
@@ -125,4 +125,8 @@ Number decorated = new RaiseErrorNumberDecorator(zero);
 decorated.Plus(zero); --> "System.Exception is raised."
 
 ```
+
+## Further Reading
+
+Like all great software projects, the code itself is a living document that communicates with its users better than any text file ever could. Explore the unit tests to witness the full power of the library.
 
