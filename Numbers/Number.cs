@@ -1,4 +1,4 @@
-﻿namespace NumbersTests.Numbers
+﻿namespace Numbers
 {
     public abstract class Number
     {

@@ -1,4 +1,4 @@
-﻿namespace NumbersTests.Numbers
+﻿namespace Numbers
 {
     public class PositiveNumber : Number
     {
