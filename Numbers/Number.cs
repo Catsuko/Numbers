@@ -11,8 +11,6 @@
         public abstract Number Invert();
         public abstract Number Sign();
         public abstract Number Absolute();
-        public abstract bool IsZero();
-        public abstract bool GreaterThanZero();
         public abstract bool GreaterThan(Number other);
 
         public static Number operator + (Number a, Number b)

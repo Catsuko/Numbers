@@ -44,16 +44,6 @@
             return _previous.Times(other).Plus(other);
         }
 
-        public override bool GreaterThanZero()
-        {
-            return true;
-        }
-
-        public override bool IsZero()
-        {
-            return false;
-        }
-
         public override Number Absolute()
         {
             return this;
@@ -61,7 +51,7 @@
 
         public override bool GreaterThan(Number other)
         {
-            return Minus(other).GreaterThanZero();
+            return Minus(other).Sign().Equals(Sign());
         }
 
         public override Number Sign()
@@ -75,7 +65,7 @@
             Number step = other.Absolute();
             Number current = step;
 
-            if (other.IsZero())
+            if (other.Sign().Equals(other.Sign().Invert()))
                 throw new System.Exception("Cannot divide by zero!");
 
             while (GreaterThan(current) || Equals(current))
@@ -89,7 +79,7 @@
 
         public override bool Equals(object obj)
         {
-            return obj is Number otherNum && otherNum.Minus(this).IsZero();
+            return obj is Number otherNum && Previous().Equals(otherNum.Previous());
         }
 
         public override int GetHashCode()

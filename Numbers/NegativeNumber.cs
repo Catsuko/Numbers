@@ -9,19 +9,9 @@
             _next = next;
         }
 
-        public override bool IsZero()
-        {
-            return false;
-        }
-
-        public override bool GreaterThanZero()
-        {
-            return false;
-        }
-
         public override bool GreaterThan(Number other)
         {
-            return Minus(other).GreaterThanZero();
+            return Minus(other).Sign().Equals(Sign().Invert());
         }
 
         public override Number Invert()
@@ -76,7 +66,7 @@
 
         public override bool Equals(object obj)
         {
-            return obj is Number otherNum && otherNum.Minus(this).IsZero();
+            return obj is Number otherNum && Next().Equals(otherNum.Next());
         }
 
         public override int GetHashCode()

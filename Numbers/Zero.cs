@@ -19,27 +19,18 @@
 
         public override bool GreaterThan(Number other)
         {
-            return Minus(other).GreaterThanZero();
+            return Minus(other).Sign().Previous().Equals(this);
         }
 
+        //TODO: Can Equals be implemented without a type check or an IsZero method?
         public override bool Equals(object obj)
         {
-            return obj is Number && ((Number)obj).IsZero();
+            return obj is Zero;
         }
 
         public override int GetHashCode()
         {
             return 0;
-        }
-
-        public override bool IsZero()
-        {
-            return true;
-        }
-
-        public override bool GreaterThanZero()
-        {
-            return false;
         }
 
         public override Number Minus(Number other)
