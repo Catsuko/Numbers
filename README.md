@@ -32,7 +32,7 @@ two.ToString(); --> "++"
 
 ### Addition
 
-Because the Numbers library is strictly Object-Oriented, naturally it is incredibly semantic. Check out how easily and cleary we can add some Numbers together:
+Because the Numbers library is strictly Object-Oriented, naturally it is incredibly semantic. Check out how easily and clearly we can add some Numbers together:
 
 ```
 using Numbers;
