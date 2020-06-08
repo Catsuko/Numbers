@@ -38,7 +38,7 @@ Because the Numbers library is strictly Object-Oriented, naturally it is incredi
 using Numbers;
 
 Number one = new Zero().Next();
-Number two = new Zero().Next();
+Number two = one.Next();
 Number three = one.Plus(two);
 
 three.ToString(); --> "+++"
